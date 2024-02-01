@@ -7,25 +7,51 @@
     <title>Creación y acceso a Nodos</title>
 </head>
 <body>
-    <header>
+   
+   
+     <header>
         <p>Entender la creación y acceso a nodos es fundamental en el desarrollo web, especialmente cuando trabajas con el Modelo de Objeto de Documento (DOM) en HTML y JavaScript. </p>
         
     </header>
 
     <main>
         <section class="creacion">
-            <h2>Creacion de Nodos:</h2>
-            <h5>1. DOM (Modelo de Objetos de Documento):</h5>
-               <br><p>El Document Object Model (DOM) es una interfaz de programación que proporciona una representación estructurada y jerárquica de documentos HTML y XML. Básicamente, el DOM permite a los programadores acceder y manipular los elementos de una página web o un documento XML mediante código.</p> 
-               <br><p>El árbol del DOM organiza la estructura del documento en una jerarquía de nodos. Cada nodo representa una parte del documento, como un elemento HTML, un atributo, texto, etc. Estos nodos están interconectados para formar una estructura de árbol, donde el nodo principal es el "nodo raíz" y los demás nodos se ramifican a partir de él.</p>
-               <br><p>Los nodos son los elementos básicos en el árbol del DOM y representan partes del documento, como elementos HTML, atributos, texto, etc.</p>
-            
-               <div class="ejemplo1">este es el div uno</div>
-               <div class="ejemplo2">este el div 2</div>
 
+              <article class="introduction">
+                <h2>Creacion de Nodos:</h2>
+                <h5>1. DOM (Modelo de Objetos de Documento):</h5>
+                <br><p>El Document Object Model (DOM) es una interfaz de programación que proporciona una representación estructurada y jerárquica de documentos HTML y XML. Básicamente, el DOM permite a los programadores acceder y manipular los elementos de una página web o un documento XML mediante código.</p> 
+                <br><p>El árbol del DOM organiza la estructura del documento en una jerarquía de nodos. Cada nodo representa una parte del documento, como un elemento HTML, un atributo, texto, etc. Estos nodos están interconectados para formar una estructura de árbol, donde el nodo principal es el "nodo raíz" y los demás nodos se ramifican a partir de él.</p>
+                <br><p>Los nodos son los elementos básicos en el árbol del DOM y representan partes del documento, como elementos HTML, atributos, texto, etc.</p>
+              </article>
 
+               <div class="ejemplo1">Este es el div uno, dentro tiene otro div </div>
+              
+
+                 <article class="expArt1">
+                            <p>Primero document.querySelector('.ejemplo1'): Utiliza el método querySelector del objeto document para seleccionar el primer elemento en el documento que tiene la clase "ejemplo1". Este elemento se almacena en la variable divEjemplo.</p>
+                        <br><p>Luego document.createElement('article'): Crea un nuevo elemento HTML de tipo <xmp><article> </xmp> y lo almacena en la variable articleElement. </p>
+                            <br><p> document.createElement('h3'): Crea un nuevo elemento HTML de tipo <xmp><h3></xmp> y lo almacena en la variable h3Element.
+                            <br><p> h3Element.textContent = 'Título del artículo';: Establece el contenido de texto del elemento <xmp><h3></xmp> como "Título del artículo".</p>
+                                <br><p>    document.createElement('p'): Crea un nuevo elemento HTML de tipo <xmp><p></xmp> y lo almacena en la variable pElement.
+                                    pElement.textContent = 'Contenido del artículo. Puedes agregar más texto aquí.';: Establece el contenido de texto del elemento <xmp><p></xmp>. </p>
+                            <br><p>    articleElement.appendChild(h3Element): Agrega el elemento <xmp><h3></xmp> como hijo del elemento <xmp><article></xmp>.
+                                articleElement.appendChild(pElement): Agrega el elemento <xmp><p></xmp> como hijo del elemento <xmp><article></xmp>.</p>
+                            <br><p>divEjemplo.parentNode: Accede al nodo padre del elemento con la clase "ejemplo1".
+                                insertBefore(articleElement, divEjemplo.nextSibling): Inserta el elemento <xmp><article></xmp> antes del siguiente hermano del elemento con la clase "ejemplo1", colocándolo así después de este elemento en el DOM.</p>    
+                                
+                </article>
+
+                <article class="ANDRES"></article>
         </section>
+
+
+            
     </main>
+    
+<section></section>
+   
+    
 <script src="script.js"></script>
 </body>
 </html>

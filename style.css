@@ -16,7 +16,35 @@ header p {
     font-size: 4rem;
 }
 
+.introduction{
+    height: 25rem;
+    margin-top: 5rem;
+ 
+    font-size: 1rem;
+}
+
+
+.introduction h2 {
+    font-size: 5rem;
+}
+.introduction h5 {
+    font-size: 2rem;
+} 
+/*aqui empieza otro articulo*/
 .ejemplo1 {
     background-color: antiquewhite;
 
+}
+
+
+
+
+.expArt1{
+    background-color: #d5e568;
+    padding: 10px;
+    margin-top: 10px
+}
+
+.ANDRES {
+    border: 0.4rem solid rgb(0, 94, 255);
 }
