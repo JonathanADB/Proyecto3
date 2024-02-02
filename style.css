@@ -19,15 +19,17 @@ header p {
 .introduction{
     height: 25rem;
     margin-top: 5rem;
- 
+ margin-left: auto;
+ margin-right: auto;
+ width: 90%;
     font-size: 1rem;
 }
 
 
-.introduction h2 {
+ h2 {
     font-size: 5rem;
 }
-.introduction h5 {
+ h5 {
     font-size: 2rem;
 } 
 /*aqui empieza otro articulo*/
@@ -40,11 +42,12 @@ header p {
 
 
 .expArt1{
-    background-color: #d5e568;
-    padding: 10px;
-    margin-top: 10px
+    background-color: #ebf4b1;
+    padding: 5rem;
+    margin-top: 10rem;
 }
 
 .ANDRES {
-    border: 0.4rem solid rgb(0, 94, 255);
+    margin-top: 5rem;
+    text-align: center;
 }
