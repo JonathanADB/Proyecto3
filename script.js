@@ -54,7 +54,7 @@ divEjemplo.parentNode.insertBefore(articleElement, divEjemplo.nextSibling);
 let listaArticulosDiv = document.createElement('div');
 listaArticulosDiv.id = 'listaArticulos';
 
-listaArticulosDiv.insertAdjacentHTML('beforeend', '<h2>Insertando segun la posición</h2>');
+listaArticulosDiv.insertAdjacentHTML('afterbegin', '<h2>Insertando segun la posición</h2>');
 
 // Crear y agregar el primer artículo
 let articulo1 = document.createElement('article');
